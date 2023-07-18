@@ -1,0 +1,232 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Merriweather', serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  }
+  
+  .login-page {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(135deg, #00a8ff, #c9e265);
+  }
+  
+  .login-wrapper {
+	max-width: 400px;
+	width: 100%;
+  }
+  
+  .login-card {
+	background-color: #ffffff;
+	border-radius: 10px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+	padding: 40px;
+	text-align: center;
+  }
+  
+  .login-logo {
+	font-size: 36px;
+	color: #333333;
+	margin-bottom: 30px;
+  }
+  
+  .login-form {
+	margin-top: 30px;
+  }
+  
+  .login-form .form-control {
+	border-radius: 25px;
+	padding: 12px 20px;
+	background-color: #f5f5f5;
+	border: none;
+	outline: none;
+	width: 100%;
+	font-size: 16px;
+	color: #333333;
+	margin-bottom: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	transition: box-shadow 0.3s ease;
+  }
+  
+  .login-form .form-control:focus {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .login-btn {
+	background-color: #007bff;
+	color: #ffffff;
+	border: none;
+	border-radius: 25px;
+	padding: 12px 25px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	margin-top: 5px;
+  }
+  
+  .login-btn:hover {
+	background-color: #0056b3;
+  }
+  
+  .main-content {
+	display: flex;
+	justify-content: space-between;
+	padding: 30px;
+	background: #ffffff;
+  }
+  
+  .document-holder {
+	flex: 1;
+	background-color: #f5f5f5;
+	border-radius: 10px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+	padding: 30px;
+	margin-right: 30px;
+  }
+  
+  .current-users {
+	margin-bottom: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+  }
+  
+  .user-info {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+	transition: transform 0.3s ease;
+  }
+  
+  .user-info .avatar {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin-right: 10px;
+	background-color: #ffffff;
+	transition: background-color 0.3s ease;
+  }
+  
+  .user-info .avatar:hover {
+	background-color: #eeeeee;
+  }
+  
+  .user-info .username {
+	font-size: 16px;
+	font-weight: bold;
+	color: #333333;
+  }
+  
+  
+  .history-holder ul {
+	padding: 0;
+	list-style: none;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+  }
+  
+  .history-holder ul li {
+	font-size: 14px;
+	color: #666666;
+	margin-bottom: 10px;
+	opacity: 0;
+	transform: translateY(20px);
+	transition: opacity 0.3s ease, transform 0.3s ease;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 10px;
+  }
+  
+  .history-holder ul li:nth-child(odd) {
+	animation: slideInLeft 0.6s forwards;
+  }
+  
+  .history-holder ul li:nth-child(even) {
+	animation: slideInRight 0.6s forwards;
+  }
+  
+  
+  @keyframes slideInLeft {
+	from {
+	  opacity: 0;
+	  transform: translateX(-100px);
+	}
+	to {
+	  opacity: 1;
+	  transform: translateX(0);
+	}
+  }
+  
+  @keyframes slideInRight {
+	from {
+	  opacity: 0;
+	  transform: translateX(100px);
+	}
+	to {
+	  opacity: 1;
+	  transform: translateX(0);
+	}
+  }
+  
+  .navbar {
+	background-color: #f5f5f5;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	transition: all 0.5s ease;
+	border-bottom: 3px solid #007bff;
+	position: relative;
+	display: flex;
+	justify-content: center;
+  }
+  
+  .navbar::before, .navbar::after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 3px;
+	background-color: #007bff;
+	transition: all 0.3s ease;
+  }
+  
+  .navbar::before {
+	top: 0;
+	left: 0;
+  }
+  
+  .navbar::after {
+	bottom: 0;
+	right: 0;
+  }
+  
+  .navbar:hover::before, .navbar:hover::after {
+	width: 100%;
+  }
+  
+  .navbar-brand {
+	font-size: 24px;
+	font-weight: bold;
+	color: #333333;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	text-align: center;
+  }
+  
+  .navbar-brand:hover {
+	color: #0056b3;
+	text-decoration: underline;
+  }
+  
+  .rsw-toolbar {
+    align-items: center;
+    background-color: #007bff;
+    border-bottom: 1px solid #2b7cfe;
+    display: flex;
+}
+  
+
+  
+  
